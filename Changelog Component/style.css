@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Neue';
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.changelog-content {
+  border: 3px solid black;
+  padding: 15px;
+  border-radius: 20px;
+  width: 50%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+header h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+header p {
+  font-size: 24px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.change {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.change-timeline {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+
+  position: relative;
+}
+.change-name {
+  flex: 1;
+  text-align: center;
+}
+.change-content {
+  flex: 2;
+  text-align: center;
+}
+
+.change-timeline::after {
+  content: ' ';
+  background-color: black;
+  height: 24px;
+  width: 3px;
+}
+.change-timeline::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 6rem;
+  background-color: black;
+}
+.text-gray {
+  color: gray;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+button {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+  cursor: pointer;
+}
+button:hover {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+  cursor: pointer;
+}
+button:active {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+  cursor: pointer;
+}
